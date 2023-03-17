@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<odoo>
+    <data>
+
+        <!-- Vista para el modelo de Spaceship -->
+        <record id="view_spaceship_form" model="ir.ui.view">
+            <field name="name">view.mission.spaceship.form</field>
+            <field name="model">mission.spaceship</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="capacity"/>
+                            <field name="fuel_level"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vista para el modelo de Crew -->
+        <record id="view_crew_form" model="ir.ui.view">
+            <field name="name">view.mission.crew.form</field>
+            <field name="model">mission.crew</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="rank"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
